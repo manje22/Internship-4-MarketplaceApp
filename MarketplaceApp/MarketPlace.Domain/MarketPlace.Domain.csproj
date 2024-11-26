@@ -57,5 +57,11 @@
   <ItemGroup>
     <Folder Include="Factories\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarketPlace.Data\MarketPlace.Data.csproj">
+      <Project>{30f792b4-48a0-4225-8fe2-11b6f87ea9e5}</Project>
+      <Name>MarketPlace.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
