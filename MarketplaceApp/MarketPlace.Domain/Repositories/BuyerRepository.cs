@@ -43,7 +43,12 @@ namespace MarketPlace.Domain.Repositories
             return buyer.PurchaseHistory;
         }
 
-        public Buyer? GetById(int id) => Context.Buyers.FirstOrDefault(u => u.Id == id);
+        public Buyer GetById(Guid id) => Context.Buyers.FirstOrDefault(u => u.Id == id);
+
+        public  BuyProduct(User user, Product product)
+        {
+            
+        }
 
     }
 }

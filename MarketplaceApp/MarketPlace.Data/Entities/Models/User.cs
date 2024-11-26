@@ -11,10 +11,9 @@ namespace MarketPlace.Data.Entities.Models
     {
         public User(string name, string email) { 
             Name = name; Email = email;
-            Id = Guid.NewGuid();
         }
         public string Name { get; set; }
         public string Email { get; set; }
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }
