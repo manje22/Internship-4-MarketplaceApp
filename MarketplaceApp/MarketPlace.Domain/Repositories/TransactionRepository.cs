@@ -28,6 +28,8 @@ namespace MarketPlace.Domain.Repositories
             buyer.Balance -= (double)product.Price;
             merchant.Income += (double)product.Price;
 
+            //marketplace uzima 5%
+
             Context.Transactions.Add(newTrasaction);
             buyer.PurchaseHistory.Add(product);
 
