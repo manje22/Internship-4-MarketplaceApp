@@ -11,11 +11,14 @@ namespace MarketPlace.Data.Entities.Models
         public double Balance { get; set; }
         public List<Product> FavoriteProducts { get; set; }
         public List<Product> PurchaseHistory { get; set; }
+        public Guid ID { get; set; }
         public Buyer(string name, string email): base(name, email)
         {
             Balance = 100;
             FavoriteProducts = new List<Product>();
             PurchaseHistory = new List<Product>();
+            ID = Guid.NewGuid();
         }
+
     }
 }
