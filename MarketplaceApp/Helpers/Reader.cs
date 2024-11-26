@@ -8,5 +8,6 @@ namespace MarketplaceApp.Helpers
 {
     internal class Reader
     {
+        
     }
 }

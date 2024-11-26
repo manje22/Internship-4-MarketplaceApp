@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Data.Entities.Models
 {
-    internal class Transaction
+    public class Transaction
     {
         public Guid Id { get; set; }
         public Guid ProductId { get; set; }
