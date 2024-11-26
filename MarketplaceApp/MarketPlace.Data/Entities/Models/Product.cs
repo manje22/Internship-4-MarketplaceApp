@@ -17,5 +17,16 @@ namespace MarketPlace.Data.Entities.Models
         public Merchant Merchant { get; set; }
         public ProductCategories Category { get; set; }
         public double Rating { get; set; }
+
+        public Product(string name, string description, double price, Merchant merchant, ProductCategories category)
+        {
+            Name = name;
+            Description = description;
+            Price = price;
+            Merchant = merchant;
+            Category = category;
+            Rating = double.NaN;
+            IsSold = false;
+        }
     }
 }

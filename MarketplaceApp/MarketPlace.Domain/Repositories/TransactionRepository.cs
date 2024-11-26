@@ -8,5 +8,6 @@ namespace MarketPlace.Domain.Repositories
 {
     internal class TransactionRepository
     {
+        public 
     }
 }
