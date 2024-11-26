@@ -8,10 +8,16 @@ namespace MarketPlace.Data.Entities.Models
 {
     public class Transaction
     {
-        public int Id { get; set; }
-        public int ProductId { get; set; }
+        public Guid Id { get; set; }
+        public Product Product { get; set; }
         public Buyer Buyer { get; set; }
         public Merchant Merchant { get; set; }
         public DateTime TimeOfPurchase { get; set; }
+        public Transaction(Buyer buyer, Merchant merchant, Product product, DateTime timeOfPurchase) {
+            this.Buyer = buyer;
+            this.Merchant = merchant;
+            this.Product = product;
+            this.TimeOfPurchase = timeOfPurchase;
+        }
     }
 }

@@ -10,5 +10,7 @@ namespace MarketPlace.Domain.Enums
     {
         Success,
         NotFound,
+        NotEnoughFunds,
+        NotAvailable,
     }
 }

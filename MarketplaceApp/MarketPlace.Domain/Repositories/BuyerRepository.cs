@@ -45,10 +45,5 @@ namespace MarketPlace.Domain.Repositories
 
         public Buyer GetByEmail(string email) => Context.Buyers.FirstOrDefault(u => u.Email == email);
 
-        //public  BuyProduct(User user, Product product)
-        //{
-            
-        //}
-
     }
 }
