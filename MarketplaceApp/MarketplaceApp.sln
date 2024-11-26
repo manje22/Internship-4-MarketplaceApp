@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceApp", "MarketplaceApp.csproj", "{02E8472E-D8A9-4407-B017-EB4915396B80}"
+	ProjectSection(ProjectDependencies) = postProject
+		{806AA976-F04E-4729-9F2A-ADCD9F3CDE90} = {806AA976-F04E-4729-9F2A-ADCD9F3CDE90}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Data", "MarketPlace.Data\MarketPlace.Data.csproj", "{30F792B4-48A0-4225-8FE2-11B6F87EA9E5}"
 EndProject
