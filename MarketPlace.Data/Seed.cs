@@ -1,4 +1,4 @@
-﻿using MarketPlace.Data.Entities.Models;
+﻿using MarketPlace.Data.Entities.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿using MarketPlace.Data.Entities.Models;
+﻿using MarketPlace.Data.Entities.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,5 @@ namespace MarketPlace.Data
         public List<Merchant> Merchants = Seed.Merchants;
         public List<Transaction> Transactions = Seed.Transactions;
         public List<Product> Products = Seed.Products;
-
     }
 }

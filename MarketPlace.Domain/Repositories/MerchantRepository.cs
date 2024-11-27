@@ -1,14 +1,10 @@
-﻿using System;
+﻿using MarketPlace.Data.Entities.Enums;
+using MarketPlace.Data.Entities.models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
-using MarketPlace.Data.Entities.Models;
-using MarketPlace.Domain.Enums;
-using MarketPlace.Domain.Repositories;
-using MarketPlace.Data;
-using MarketPlace.Data.Entities.enums;
 
 namespace MarketPlace.Domain.Repositories
 {
@@ -24,7 +20,7 @@ namespace MarketPlace.Domain.Repositories
             var merchant = new Merchant(name, email);
 
             Context.Merchants.Add(merchant);
-            
+
         }
 
         public List<Product> GetAllProducts(string email)
@@ -59,7 +55,7 @@ namespace MarketPlace.Domain.Repositories
                 return null;
             }
 
-            var products = merchant.Inventory.Where(p => p.Category==category);
+            var products = merchant.Inventory.Where(p => p.Category == category);
             return (List<Product>)products;
         }
 

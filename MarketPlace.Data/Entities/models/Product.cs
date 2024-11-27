@@ -1,11 +1,10 @@
-﻿using MarketPlace.Data.Entities.enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketPlace.Data.Entities.Models
+namespace MarketPlace.Data.Entities.models
 {
     public class Product
     {

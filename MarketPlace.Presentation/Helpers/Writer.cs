@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceApp.Helpers
+namespace MarketPlace.Presentation.Helpers
 {
-    internal class Reader
+    public class Writer
     {
-        
     }
 }

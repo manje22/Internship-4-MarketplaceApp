@@ -1,19 +1,17 @@
-﻿using System;
+﻿using MarketPlace.Data.Entities.models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
-using MarketPlace.Data.Entities.Models;
-using MarketPlace.Data.Entities;
-using MarketPlace.Data;
 
 namespace MarketPlace.Domain.Repositories
 {
     public class BuyerRepository
     {
         protected readonly Data.Context Context;
-        public BuyerRepository(Data.Context context) {
+        public BuyerRepository(Data.Context context)
+        {
             Context = context;
         }
 
@@ -23,7 +21,8 @@ namespace MarketPlace.Domain.Repositories
             return true;
         }
 
-        public bool AddToFavorites(Buyer buyer, Product product) {
+        public bool AddToFavorites(Buyer buyer, Product product)
+        {
             buyer.FavoriteProducts.Add(product);
             return true;
         }
@@ -34,7 +33,8 @@ namespace MarketPlace.Domain.Repositories
             return true;
         }
 
-        public List<Product> GetFavoriteProducts(Buyer buyer) {
+        public List<Product> GetFavoriteProducts(Buyer buyer)
+        {
             return buyer.FavoriteProducts;
         }
 
@@ -44,6 +44,5 @@ namespace MarketPlace.Domain.Repositories
         }
 
         public Buyer GetByEmail(string email) => Context.Buyers.FirstOrDefault(u => u.Email == email);
-
     }
 }

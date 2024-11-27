@@ -1,5 +1,5 @@
-﻿using MarketPlace.Data.Entities.enums;
-using MarketPlace.Data.Entities.Models;
+﻿using MarketPlace.Data.Entities.Enums;
+using MarketPlace.Data.Entities.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Domain.Repositories
 {
-    internal class ProductRepository
+    public class ProductRepository
     {
         protected readonly Data.Context Context;
         public ProductRepository(Data.Context context)
@@ -16,7 +16,8 @@ namespace MarketPlace.Domain.Repositories
             Context = context;
         }
 
-        public void NewProduct(string name, string description, double price, Merchant merchant, ProductCategories category) {
+        public void NewProduct(string name, string description, double price, Merchant merchant, ProductCategories category)
+        {
             var product = new Product(name, description, price, merchant, category);
             Context.Products.Add(product);
             merchant.Inventory.Add(product);

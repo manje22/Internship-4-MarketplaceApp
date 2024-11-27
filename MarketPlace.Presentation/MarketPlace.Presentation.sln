@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Presentation", "MarketPlace.Presentation.csproj", "{CC4702FF-E84A-44C2-BFA8-1946D0202939}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Domain", "..\MarketPlace.Domain\MarketPlace.Domain.csproj", "{B25A635A-DE2F-4FA6-B470-B3439A467EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Data", "..\MarketPlace.Data\MarketPlace.Data.csproj", "{38B10325-FD24-43B6-A1B7-5759C9418B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CC4702FF-E84A-44C2-BFA8-1946D0202939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC4702FF-E84A-44C2-BFA8-1946D0202939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC4702FF-E84A-44C2-BFA8-1946D0202939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25A635A-DE2F-4FA6-B470-B3439A467EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25A635A-DE2F-4FA6-B470-B3439A467EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25A635A-DE2F-4FA6-B470-B3439A467EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25A635A-DE2F-4FA6-B470-B3439A467EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B10325-FD24-43B6-A1B7-5759C9418B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B10325-FD24-43B6-A1B7-5759C9418B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B10325-FD24-43B6-A1B7-5759C9418B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B10325-FD24-43B6-A1B7-5759C9418B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

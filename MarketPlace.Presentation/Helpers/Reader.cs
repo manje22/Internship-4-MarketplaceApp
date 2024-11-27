@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketPlace.Data
+namespace MarketPlace.Presentation.Helpers
 {
-    internal class Program
+    internal class Reader
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
