@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketPlace.Presentation.Helpers
+namespace MarketPlace.Presentation.Abstractions
 {
-    public class Writer
+    internal class BaseMenuAction
     {
-
     }
 }

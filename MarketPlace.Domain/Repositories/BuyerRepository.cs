@@ -4,16 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MarketPlace.Data;
 
 namespace MarketPlace.Domain.Repositories
 {
-    public class BuyerRepository
+    public class BuyerRepository:BaseRepository
     {
-        protected readonly Data.Context Context;
-        public BuyerRepository(Data.Context context)
-        {
-            Context = context;
-        }
+        protected readonly Context Context;
+        public BuyerRepository(Context context):base(context) { }
 
         public bool Add(Buyer buyer)
         {

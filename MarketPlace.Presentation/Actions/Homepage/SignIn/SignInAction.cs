@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MarketPlace
 
-namespace MarketPlace.Presentation.Helpers
+namespace MarketPlace.Presentation.Actions.Homepage.SignIn
 {
-    public class Writer
+    public class SignInAction
     {
 
     }

@@ -8,13 +8,11 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Domain.Repositories
 {
-    public class MerchantRepository
+    public class MerchantRepository:BaseRepository
     {
         protected readonly Data.Context Context;
-        public MerchantRepository(Data.Context context)
-        {
-            Context = context;
-        }
+        public MerchantRepository(Data.Context context):base(context) { }
+        
         public void AddMerchant(string name, string email)
         {
             var merchant = new Merchant(name, email);

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Domain.Repositories
 {
-    public class ProductRepository
+    public class ProductRepository:BaseRepository
     {
         protected readonly Data.Context Context;
-        public ProductRepository(Data.Context context)
+        public ProductRepository(Data.Context context):base(context)
         {
             Context = context;
         }

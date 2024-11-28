@@ -8,13 +8,11 @@ using System.Threading.Tasks;
 
 namespace MarketPlace.Domain.Repositories
 {
-    public class TransactionRepository
+    public class TransactionRepository:BaseRepository
     {
         protected readonly Data.Context Context;
-        public TransactionRepository(Data.Context context)
-        {
-            Context = context;
-        }
+        public TransactionRepository(Data.Context context):base(context)
+        { }
 
         public StatusValues NewTransaction(Merchant merchant, Buyer buyer, Product product)
         {

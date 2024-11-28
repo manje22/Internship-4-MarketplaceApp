@@ -11,4 +11,10 @@
     <ProjectReference Include="..\MarketPlace.Domain\MarketPlace.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Actions\MainMenu\BuyerMainMenu\" />
+    <Folder Include="Actions\MainMenu\MerchantMainMenu\" />
+    <Folder Include="Actions\MainMenu\LogOut\" />
+  </ItemGroup>
+
 </Project>
