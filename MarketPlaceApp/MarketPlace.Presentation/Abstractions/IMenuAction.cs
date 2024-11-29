@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceApp
+namespace MarketPlace.Presentation.Abstractions
 {
-    internal class Program
+    public interface IMenuAction : IAction
     {
-        static void Main(string[] args)
-        {
-        }
+        IList<IAction> Actions { get; set; }
     }
 }
